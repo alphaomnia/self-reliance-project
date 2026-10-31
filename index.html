@@ -12,7 +12,7 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Survival">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<title>Self Reliance Guide v2.5</title>
+<title>Self Reliance Guide v2.6</title>
 <style>
 :root{--bg:#f7f5f0;--card:#ffffff;--ink:#1f1e1b;--muted:#5f5d57;--line:#dcd8cc;--accent:#0f6e56;--accent-bg:#e1f5ee;--warn-bg:#faeeda;--danger-bg:#fcebeb;--nav:#1f1e1b;--navink:#f7f5f0}
 @media (prefers-color-scheme:dark){:root{--bg:#161614;--card:#21211e;--ink:#ecebe6;--muted:#b4b2a9;--line:#3a3935;--accent:#5dcaa5;--accent-bg:#08332a;--warn-bg:#3a2a0c;--danger-bg:#3d1515;--nav:#2c2c2a;--navink:#ecebe6}}
@@ -135,6 +135,7 @@ details.fold>summary h3{margin:0;font-size:17px}
 .qr-code{flex:0 0 auto;border-radius:6px}
 .kids .qr-code{width:96px;height:96px}
 @media print{.inst{display:block!important}.inst button{display:none!important}}
+a.tel{color:inherit;text-decoration:underline;text-decoration-color:var(--accent);text-underline-offset:3px}
 .morse{display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:6px;margin:10px 0}
 .m{display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:8px;padding:6px 10px}
 .m b{font-size:20px;min-width:22px}
@@ -162,7 +163,7 @@ details.fold>summary h3{margin:0;font-size:17px}
 
 <section id="overview">
 <h1>Self Reliance Guide</h1>
-<div class="ver"><b>Version 2.5</b> · 31 October 2026</div>
+<div class="ver"><b>Version 2.6</b> · 31 October 2026</div>
 <div id="updBar" class="upd" hidden><span id="updText">A newer version is available.</span><button type="button" id="updBtn">Update now</button></div>
 <div id="installCard" class="inst">
 <b>Install this guide on your phone</b>
@@ -182,8 +183,8 @@ details.fold>summary h3{margin:0;font-size:17px}
 <a href="#signaller"><span class="ei">🔦</span>Signal for help</a>
 </div>
 <div class="menu">
-<div><b>Now</b><a href="#first">First hour</a><a href="#scenarios">What to do if...</a><a href="#lifesaving">Life saving</a><a href="#home">Home and winter</a><a href="#plan">Family plan</a><a href="#phone">Phone and offline tools</a><a href="#people">Children, pets, practice</a><a href="#radio">Radio and sirens</a><a href="#morse">Morse</a></div>
-<div><b>Supplies</b><a href="#food">Food</a><a href="#water">Water</a><a href="#kits">Kit lists</a><a href="#car">Car</a><a href="#power">Power</a></div>
+<div><b>Now</b><a href="#first">First hour</a><a href="#scenarios">What to do if...</a><a href="#lifesaving">Life saving</a><a href="#home">Home and winter</a><a href="#plan">Family plan</a><a href="#phone">Phone and offline tools</a><a href="#people">Children, pets, practice</a><a href="#local">Help in Prague and region</a><a href="#radio">Radio and sirens</a><a href="#morse">Morse</a></div>
+<div><b>Supplies</b><a href="#food">Food</a><a href="#preserve">Preserving and menu</a><a href="#water">Water</a><a href="#kits">Kit lists</a><a href="#car">Car</a><a href="#power">Power</a></div>
 <div><b>Skills</b><a href="#cooking">Cooking</a><a href="#skills">Scout skills</a><a href="#essentials">Essentials</a></div>
 <div><b>Long term</b><a href="#grow">Grow</a><a href="#forage">Forage</a><a href="#version">Version</a></div>
 </div>
@@ -193,6 +194,7 @@ details.fold>summary h3{margin:0;font-size:17px}
 <div class="qc" id="qr-water"><b>Water</b>Drink 3 to 4 L per person a day.<br>Plain bleach 5 to 6%: <b>2 drops per litre</b>, 4 if cloudy, wait 30 minutes.<br>Or boil for 1 minute. <a href="#water">More</a></div>
 <div class="qc" id="qr-sirens"><b>Sirens</b><b class="s">Czechia:</b> wavering tone 140 s: go inside, close windows, radio on.<br><b class="s">Germany:</b> 1 min rising and falling = warning; 1 min steady = all clear.<br><b class="s">Austria:</b> 3 min steady = warning; 1 min rising and falling = take shelter; 1 min steady = all clear.<br><b class="s">Poland:</b> 3 min wavering = alarm; 3 min steady = all clear.<br><b class="s">Italy:</b> IT-alert on phones. <a href="#radio">More</a></div>
 <div class="qc" id="qr-hurt"><b>Someone hurt</b>Call <b>155</b> (or 112).<br>Not breathing: 30 hard pushes mid chest, 2 breaths, repeat.<br>Bleeding: press hard 10 minutes, do not lift.<br>Burn: cool under running water 20 minutes.<br>Cold and confused: dry clothes, sleeping bag, warm sweet drink. <a href="#lifesaving">More</a></div>
+<div class="qc"><b>Poisoning</b>Swallowed chemicals, medicines, plants or mushrooms: poison centre <b>224 919 293</b>, 24 hours. Unconscious or struggling to breathe: 155. <a href="#local">More</a></div>
 <div class="qc"><b>Smell of gas</b>No switches, no flames. Windows open, everyone out. Call <b>1239</b> from outside. <a href="#home">More</a></div>
 <div class="qc"><b>Radio</b>ČRo Radiožurnál <b>94.6 or 90.9 FM</b> (Prague).<br>Walkie talkies: PMR <b>channel 8</b>.<br>Night long wave: Polskie Radio 225 kHz. <a href="#radio">More</a></div>
 <div class="qc"><b>Food safety, doors shut</b>Fridge 4 hours. Half full freezer 24 hours. Full freezer 48 hours. <a href="#first">More</a></div>
@@ -214,11 +216,11 @@ details.fold>summary h3{margin:0;font-size:17px}
 
 <h3>Emergency numbers, Czech Republic</h3>
 <div class="grid">
-<div class="card"><div class="big">112</div>All emergencies, EU wide</div>
-<div class="card"><div class="big">155</div>Ambulance <span class="cz">(záchranka)</span></div>
-<div class="card"><div class="big">150</div>Fire <span class="cz">(hasiči)</span></div>
-<div class="card"><div class="big">158</div>Police <span class="cz">(policie)</span></div>
-<div class="card"><div class="big">800 850 860</div>ČEZ Distribuce power faults, free</div>
+<div class="card"><div class="big"><a class="tel" href="tel:112">112</a></div>All emergencies, EU wide</div>
+<div class="card"><div class="big"><a class="tel" href="tel:155">155</a></div>Ambulance <span class="cz">(záchranka)</span></div>
+<div class="card"><div class="big"><a class="tel" href="tel:150">150</a></div>Fire <span class="cz">(hasiči)</span></div>
+<div class="card"><div class="big"><a class="tel" href="tel:158">158</a></div>Police <span class="cz">(policie)</span></div>
+<div class="card"><div class="big"><a class="tel" href="tel:+420800850860">800 850 860</a></div>ČEZ Distribuce power faults, free</div>
 <div class="card"><div class="big">bezstavy.cz</div>ČEZ outage map</div>
 </div>
 <p class="muted">Germany, Austria, Poland and Italy numbers are in <a href="#radio">Radio</a>. The Czech government's own preparedness site is <a href="https://www.72h.gov.cz">72h.gov.cz</a>.</p>
@@ -504,6 +506,84 @@ details.fold>summary h3{margin:0;font-size:17px}
 <a class="top" href="#top">Back to top</a>
 </section>
 
+<section id="local">
+<h2>Help in Prague and the region</h2>
+<p>Emergency services for Prague and Central Bohemia. Hospitals and pharmacies change hours: check <b>lps.praha.eu</b> when online. Fill in your own local details below on paper.</p>
+
+<details class="fold"><summary><h3>Phone numbers</h3></summary>
+<div class="tw"><table>
+<tr><th>Number</th><th>What</th></tr>
+<tr><td><b><a class="tel" href="tel:112">112</a></b></td><td>All emergencies, works in any EU country, on any phone</td></tr>
+<tr><td><b><a class="tel" href="tel:155">155</a></b></td><td>Ambulance <span class="cz">(záchranná služba)</span></td></tr>
+<tr><td><b><a class="tel" href="tel:150">150</a></b></td><td>Fire and rescue <span class="cz">(hasiči)</span></td></tr>
+<tr><td><b><a class="tel" href="tel:158">158</a></b></td><td>Police <span class="cz">(policie)</span></td></tr>
+<tr><td><b><a class="tel" href="tel:1239">1239</a></b></td><td>Gas leak or fault, 24 hours</td></tr>
+<tr><td><b><a class="tel" href="tel:+420800850860">800 850 860</a></b></td><td>ČEZ power faults, free (outside Prague)</td></tr>
+<tr><td><b><a class="tel" href="tel:+420224919293">224 919 293</a></b><br><b><a class="tel" href="tel:+420224915402">224 915 402</a></b></td><td>Poison information centre <span class="cz">(Toxikologické informační středisko)</span>, 24 hours: swallowed chemicals, medicines, plants, mushrooms</td></tr>
+<tr><td><b><a class="tel" href="tel:116123">116 123</a></b></td><td>First psychological help line, free, 24 hours</td></tr>
+<tr><td><b><a class="tel" href="tel:116111">116 111</a></b></td><td>Helpline for children and teenagers, free, 24 hours</td></tr>
+<tr><td><b><a class="tel" href="tel:116000">116 000</a></b></td><td>Missing children, free, 24 hours</td></tr>
+</table></div>
+
+</details>
+<details class="fold"><summary><h3>Hospital emergency departments</h3></summary>
+<p>For life threatening problems call 155. For urgent but not life threatening problems out of hours, go to the out of hours service <span class="cz">(lékařská pohotovostní služba, LPS)</span>; fee 90 Kč.</p>
+<div class="tw"><table class="stack">
+<tr><th>Hospital</th><th>Address</th><th>Adults</th><th>Children</th></tr>
+<tr><td data-label="Hospital"><span><b>FN Motol</b></span></td><td data-label="Address"><span>V Úvalu 84, Praha 5</span></td><td data-label="Adults"><span><a class="tel" href="tel:+420224438590">224 438 590</a></span></td><td data-label="Children"><span><a class="tel" href="tel:+420224433652">224 433 652</a></span></td></tr>
+<tr><td data-label="Hospital"><span><b>Thomayerova nemocnice</b></span></td><td data-label="Address"><span>Vídeňská 800, Praha 4</span></td><td data-label="Adults"><span><a class="tel" href="tel:+420261082520">261 082 520</a></span></td><td data-label="Children"><span><a class="tel" href="tel:+420261083783">261 083 783</a></span></td></tr>
+<tr><td data-label="Hospital"><span><b>Nemocnice na Bulovce</b></span></td><td data-label="Address"><span>Budínova 2, Praha 8</span></td><td data-label="Adults"><span><a class="tel" href="tel:+420283842222">283 842 222</a></span></td><td data-label="Children"><span><a class="tel" href="tel:+420283842224">283 842 224</a></span></td></tr>
+<tr><td data-label="Hospital"><span><b>FN Královské Vinohrady</b></span></td><td data-label="Address"><span>Šrobárova 50, Praha 10</span></td><td data-label="Adults"><span><a class="tel" href="tel:+420267163778">267 163 778</a></span></td><td data-label="Children"><span><a class="tel" href="tel:+420267163600">267 163 600</a></span></td></tr>
+<tr><td data-label="Hospital"><span><b>Ústřední vojenská nemocnice</b></span></td><td data-label="Address"><span>U Vojenské nemocnice 1200, Praha 6</span></td><td data-label="Adults"><span><a class="tel" href="tel:+420973203571">973 203 571</a></span></td><td></td></tr>
+<tr><td data-label="Hospital"><span><b>Nemocnice Na Františku</b></span></td><td data-label="Address"><span>Na Františku 8, Praha 1</span></td><td data-label="Adults"><span><a class="tel" href="tel:+420222801344">222 801 344</a></span></td><td></td></tr>
+<tr><td data-label="Hospital"><span><b>VFN, children</b></span></td><td data-label="Address"><span>Ke Karlovu 2, Praha 2</span></td><td></td><td data-label="Children"><span><a class="tel" href="tel:+420224967777">224 967 777</a></span></td></tr>
+</table></div>
+<p class="muted">Out of hours services run every night and all weekend; weekday hours start between 16:00 and 19:00 depending on the hospital.</p>
+
+</details>
+<details class="fold"><summary><h3>Emergency dentist</h3></summary>
+<div class="tw"><table>
+<tr><th>Where</th><th>Phone</th><th>Who</th></tr>
+<tr><td>Městská poliklinika, Spálená 12, Praha 1</td><td><a class="tel" href="tel:+420222924268">222 924 268</a></td><td>Adults and children, evenings and weekends</td></tr>
+<tr><td>FN Motol, V Úvalu 84, Praha 5</td><td><a class="tel" href="tel:+420224433171">224 433 171</a></td><td>Children, 24 hours, serious cases only</td></tr>
+</table></div>
+
+</details>
+<details class="fold"><summary><h3>Pharmacies with night service</h3></summary>
+<div class="tw"><table>
+<tr><th>Where</th><th>Phone</th></tr>
+<tr><td>FN Motol, V Úvalu 84, Praha 5</td><td><a class="tel" href="tel:+420224435736">224 435 736</a></td></tr>
+<tr><td>Thomayerova nemocnice, Vídeňská 800, Praha 4</td><td><a class="tel" href="tel:+420261084019">261 084 019</a></td></tr>
+<tr><td>Nemocnice Na Františku, Praha 1</td><td><a class="tel" href="tel:+420222801397">222 801 397</a></td></tr>
+<tr><td>Vítězné náměstí 13, Praha 6</td><td><a class="tel" href="tel:+420224325520">224 325 520</a></td></tr>
+<tr><td>Nemocnice na Bulovce, Praha 8</td><td><a class="tel" href="tel:+420266082017">266 082 017</a></td></tr>
+</table></div>
+
+</details>
+<details class="fold"><summary><h3>Emergency vets</h3></summary>
+<div class="tw"><table>
+<tr><th>Where</th><th>Phone</th></tr>
+<tr><td>Veterinární nemocnice Zahradní Město, Praha 10</td><td><a class="tel" href="tel:+420271751907">271 751 907</a></td></tr>
+<tr><td>Vetnemo, Praha 4 Libuš</td><td><a class="tel" href="tel:+420244470704">244 470 704</a></td></tr>
+</table></div>
+
+</details>
+<details class="fold"><summary><h3>Your own local details (fill in on paper)</h3></summary>
+<div class="tw"><table>
+<tr><th>Find out</th><th>Write here</th></tr>
+<tr><td>Council office and crisis plan <span class="cz">(obecní úřad, krizový plán)</span></td><td>&nbsp;</td></tr>
+<tr><td>Nearest pharmacy and its hours</td><td>&nbsp;</td></tr>
+<tr><td>Nearest GP and children's doctor <span class="cz">(praktický lékař, pediatr)</span></td><td>&nbsp;</td></tr>
+<tr><td>Where the nearest siren is, and how the council announces news <span class="cz">(rozhlas, SMS)</span></td><td>&nbsp;</td></tr>
+<tr><td>Nearest defibrillator (AED)</td><td>&nbsp;</td></tr>
+<tr><td>Water supplier and its fault line <span class="cz">(vodárna)</span></td><td>&nbsp;</td></tr>
+<tr><td>Flood risk for your street <span class="cz">(povodňová mapa)</span></td><td>&nbsp;</td></tr>
+<tr><td>Neighbours who can help, and who may need help</td><td>&nbsp;</td></tr>
+</table></div>
+</details>
+<a class="top" href="#top">Back to top</a>
+</section>
+
 <section id="radio">
 <h2>Radio and warnings</h2>
 <div class="box warn"><strong>Listen freely, transmit carefully</strong>Anyone may listen to any frequency here. Transmitting on amateur, marine or aviation bands normally needs a licence; PMR446 needs none. In a genuine life threatening emergency, international radio rules allow any means to call for help.</div>
@@ -763,6 +843,72 @@ details.fold>summary h3{margin:0;font-size:17px}
 <p>For growing your own food through the year, see <a href="#grow">Grow</a>.</p>
 </details>
 <a class="top" href="#overview">Back to top</a>
+</section>
+
+<section id="preserve">
+<h2>Preserving food and a 2 week menu</h2>
+
+<details class="fold"><summary><h3>Methods at a glance</h3></summary>
+<div class="tw"><table class="stack">
+<tr><th>Method</th><th>Good for</th><th>Keeps</th><th>Key rule</th></tr>
+<tr><td data-label="Method"><span><b>Drying</b></span></td><td data-label="Good for"><span>Apples, plums, herbs, mushrooms you know, beans</span></td><td data-label="Keeps"><span>6 to 12 months</span></td><td data-label="Key rule"><span>Dry until leathery or crisp, store airtight. Oven at 50 to 60 °C with the door ajar, or warm airy room</span></td></tr>
+<tr><td data-label="Method"><span><b>Fermenting</b></span></td><td data-label="Good for"><span>Cabbage (sauerkraut), cucumbers, carrots</span></td><td data-label="Keeps"><span>Months, cool</span></td><td data-label="Key rule"><span>2% salt by weight, vegetables kept under the brine</span></td></tr>
+<tr><td data-label="Method"><span><b>Water bath jars</b></span></td><td data-label="Good for"><span>Fruit, jam, tomatoes with added lemon juice, pickles in vinegar</span></td><td data-label="Keeps"><span>1 year or more</span></td><td data-label="Key rule"><span><b>Only acidic foods.</b> See warning below</span></td></tr>
+<tr><td data-label="Method"><span><b>Salting</b></span></td><td data-label="Good for"><span>Pork belly, fish</span></td><td data-label="Keeps"><span>Weeks to months</span></td><td data-label="Key rule"><span>Follow a tested recipe; keep cold</span></td></tr>
+<tr><td data-label="Method"><span><b>Cold storage</b></span></td><td data-label="Good for"><span>Potatoes, roots, apples, onions</span></td><td data-label="Keeps"><span>Winter</span></td><td data-label="Key rule"><span>See Grow, Keeping the harvest</span></td></tr>
+</table></div>
+
+</details>
+<details class="fold"><summary><h3>Sauerkraut</h3></summary>
+<figure><svg viewBox="0 0 420 340" role="img" aria-label="Fermenting sauerkraut in a jar, see through view" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif"><defs><marker id="fm_ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5L1 9z" fill="context-stroke"/></marker><linearGradient id="fm_g0" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#869495"/><stop offset="0.38" stop-color="#ddf0f2"/><stop offset="1" stop-color="#778384"/></linearGradient><linearGradient id="fm_g1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#87824c"/><stop offset="0.38" stop-color="#ded78a"/><stop offset="1" stop-color="#777443"/></linearGradient><linearGradient id="fm_g2" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#768d94"/><stop offset="0.38" stop-color="#c7e6f1"/><stop offset="1" stop-color="#697d83"/></linearGradient><linearGradient id="fm_g3" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#4e565d"/><stop offset="0.38" stop-color="#8d99a3"/><stop offset="1" stop-color="#454c52"/></linearGradient><linearGradient id="fm_g4" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#7b7d7e"/><stop offset="0.38" stop-color="#cecfd2"/><stop offset="1" stop-color="#6d6f70"/></linearGradient></defs><rect width="420" height="340" fill="#fbfaf6"/><polygon points="85.3,262.2 210.0,334.2 210.0,327.0 85.3,255.0" fill="#89663f" stroke="#262624" stroke-width="0.6" fill-opacity="1" stroke-linejoin="round"/><polygon points="334.7,262.2 210.0,334.2 210.0,327.0 334.7,255.0" fill="#a3794b" stroke="#262624" stroke-width="0.6" fill-opacity="1" stroke-linejoin="round"/><polygon points="210.0,183.0 334.7,255.0 210.0,327.0 85.3,255.0" fill="#c19869" stroke="#262624" stroke-width="0.6" fill-opacity="1" stroke-linejoin="round"/><path d="M145.3,255.0 A64.7,37.3 0 0 1 274.7,255.0" fill="none" stroke="#262624" stroke-width="0.7" stroke-dasharray="3 3"/><path d="M145.3,255.0 A64.7,37.3 0 0 0 274.7,255.0 L274.7,87.0 L145.3,87.0 Z" fill="url(#fm_g0)" fill-opacity="0.25" stroke="#262624" stroke-width="0.8"/><path d="M149.7,253.8 A60.3,34.8 0 0 0 270.3,253.8 L270.3,133.8 L149.7,133.8 Z" fill="url(#fm_g1)" fill-opacity="0.95" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="133.8" rx="60.3" ry="34.8" fill="#e0da92" fill-opacity="0.95" stroke="#262624" stroke-width="0.8"/><path d="M231.0,251.4 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M207.3,241.0 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M182.0,220.2 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M167.0,191.0 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M169.5,159.1 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M188.2,131.7 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M214.3,214.6 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M235.6,206.6 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M242.0,204.5 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M230.6,201.3 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M206.6,190.6 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M181.4,169.6 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M166.9,241.0 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M169.8,209.2 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M188.8,182.0 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M214.9,164.3 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M235.9,156.5 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M241.9,154.4 q6,-3 12,0" fill="none" stroke="#b4ad55" stroke-width="1.4"/><path d="M149.7,135.0 A60.3,34.8 0 0 0 270.3,135.0 L270.3,115.8 L149.7,115.8 Z" fill="url(#fm_g2)" fill-opacity="0.55" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="115.8" rx="60.3" ry="34.8" fill="#cbe8f2" fill-opacity="0.55" stroke="#262624" stroke-width="0.8"/><path d="M165.9,135.0 A44.1,25.5 0 0 0 254.1,135.0 L254.1,113.4 L165.9,113.4 Z" fill="url(#fm_g3)" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="113.4" rx="44.1" ry="25.5" fill="#94a0a9" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="87.0" rx="64.7" ry="37.3" fill="none" fill-opacity="1" stroke="#262624" stroke-width="1.0"/><path d="M142.4,72.6 A67.6,39.0 0 0 0 277.6,72.6 L277.6,64.2 L142.4,64.2 Z" fill="url(#fm_g4)" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="64.2" rx="67.6" ry="39.0" fill="#d1d3d5" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><polyline points="176.7,55.8 176.7,66.6" fill="none" stroke="#262624" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#fm_ar)"/><line x1="241.2" y1="82.2" x2="380.0" y2="40.0" stroke="#262624" stroke-width="0.9"/><circle cx="241.2" cy="82.2" r="2.4" fill="#262624"/><circle cx="380.0" cy="40.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="380.0" y="44.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">1</text><line x1="210.0" y1="113.4" x2="40.0" y2="90.0" stroke="#262624" stroke-width="0.9"/><circle cx="210.0" cy="113.4" r="2.4" fill="#262624"/><circle cx="40.0" cy="90.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="40.0" y="94.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">2</text><line x1="210.0" y1="161.4" x2="390.0" y2="150.0" stroke="#262624" stroke-width="0.9"/><circle cx="210.0" cy="161.4" r="2.4" fill="#262624"/><circle cx="390.0" cy="150.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="390.0" y="154.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">3</text><line x1="151.8" y1="195.0" x2="40.0" y2="220.0" stroke="#262624" stroke-width="0.9"/><circle cx="151.8" cy="195.0" r="2.4" fill="#262624"/><circle cx="40.0" cy="220.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="40.0" y="224.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">4</text><line x1="210.0" y1="306.6" x2="390.0" y2="300.0" stroke="#262624" stroke-width="0.9"/><circle cx="210.0" cy="306.6" r="2.4" fill="#262624"/><circle cx="390.0" cy="300.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="390.0" y="304.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">5</text></svg><figcaption><b>Sauerkraut fermenting in a jar</b><ol><li>Loose lid so gas can escape</li><li>Weight: a small jar filled with water, or a clean stone in a bag</li><li>Brine always above the cabbage</li><li>Shredded cabbage packed tight with 2% salt</li><li>Stand it on a plate: it can bubble over</li></ol></figcaption></figure>
+<ol>
+<li>Weigh the shredded cabbage. Add 20 g of salt per kg (2%), no more.</li>
+<li>Massage it with clean hands for 10 minutes until it releases liquid.</li>
+<li>Pack tightly into a clean jar, pressing down until the liquid rises over the cabbage.</li>
+<li>Keep it under the brine with a weight. Leave a gap at the top; loosely cover.</li>
+<li>Leave at room temperature (18 to 22 °C) for 1 to 4 weeks, tasting from week 1, then move somewhere cool.</li>
+</ol>
+<p class="muted">Pale scum on top is normal: skim it. Pink, slimy or fuzzy coloured mould means throw it away.</p>
+
+</details>
+<details class="fold"><summary><h3>Preserving jars in a water bath</h3></summary>
+<figure><svg viewBox="0 0 420 340" role="img" aria-label="Water bath preserving pot, see through view" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif"><defs><marker id="cn_ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M1 1L9 5L1 9z" fill="context-stroke"/></marker><linearGradient id="cn_g0" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#5f6367"/><stop offset="0.38" stop-color="#a6abb1"/><stop offset="1" stop-color="#55585b"/></linearGradient><linearGradient id="cn_g1" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#38698f"/><stop offset="0.38" stop-color="#6eb3e9"/><stop offset="1" stop-color="#325d7f"/></linearGradient><linearGradient id="cn_g2" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#3f3f3f"/><stop offset="0.38" stop-color="#787878"/><stop offset="1" stop-color="#383838"/></linearGradient><linearGradient id="cn_g3" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#958f81"/><stop offset="0.38" stop-color="#f2e9d6"/><stop offset="1" stop-color="#847f72"/></linearGradient><linearGradient id="cn_g4" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#77231b"/><stop offset="0.38" stop-color="#c85144"/><stop offset="1" stop-color="#6a1f18"/></linearGradient><linearGradient id="cn_g5" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#7d6418"/><stop offset="0.38" stop-color="#cfad41"/><stop offset="1" stop-color="#6f5915"/></linearGradient></defs><rect width="420" height="340" fill="#fbfaf6"/><polygon points="78.4,259.7 210.0,335.7 210.0,311.0 78.4,235.0" fill="#2b2f33" stroke="#262624" stroke-width="0.8" fill-opacity="1" stroke-linejoin="round"/><polygon points="341.6,259.7 210.0,335.7 210.0,311.0 341.6,235.0" fill="#33373d" stroke="#262624" stroke-width="0.8" fill-opacity="1" stroke-linejoin="round"/><polygon points="210.0,159.0 341.6,235.0 210.0,311.0 78.4,235.0" fill="#52565b" stroke="#262624" stroke-width="0.8" fill-opacity="1" stroke-linejoin="round"/><path d="M176.4,245.0 q-0.9,-7.2 3.6,-12.6 q4.5,5.4 3.6,12.6 z" fill="#f08a24" stroke="#b44f0b" stroke-width="0.6"/><path d="M178.2,245.0 q-0.5,-3.6 1.8,-7.2 q2.2,3.6 1.8,7.2 z" fill="#ffd34d"/><path d="M194.4,245.0 q-0.9,-7.2 3.6,-12.6 q4.5,5.4 3.6,12.6 z" fill="#f08a24" stroke="#b44f0b" stroke-width="0.6"/><path d="M196.2,245.0 q-0.5,-3.6 1.8,-7.2 q2.2,3.6 1.8,7.2 z" fill="#ffd34d"/><path d="M212.4,245.0 q-0.9,-7.2 3.6,-12.6 q4.5,5.4 3.6,12.6 z" fill="#f08a24" stroke="#b44f0b" stroke-width="0.6"/><path d="M214.2,245.0 q-0.5,-3.6 1.8,-7.2 q2.2,3.6 1.8,7.2 z" fill="#ffd34d"/><path d="M230.4,245.0 q-0.9,-7.2 3.6,-12.6 q4.5,5.4 3.6,12.6 z" fill="#f08a24" stroke="#b44f0b" stroke-width="0.6"/><path d="M232.2,245.0 q-0.5,-3.6 1.8,-7.2 q2.2,3.6 1.8,7.2 z" fill="#ffd34d"/><path d="M126.2,235.0 A83.8,48.4 0 0 1 293.8,235.0" fill="none" stroke="#262624" stroke-width="0.7" stroke-dasharray="3 3"/><path d="M126.2,235.0 A83.8,48.4 0 0 0 293.8,235.0 L293.8,113.4 L126.2,113.4 Z" fill="url(#cn_g0)" fill-opacity="0.3" stroke="#262624" stroke-width="0.8"/><path d="M130.9,233.1 A79.1,45.7 0 0 0 289.1,233.1 L289.1,126.7 L130.9,126.7 Z" fill="url(#cn_g1)" fill-opacity="0.35" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="126.7" rx="79.1" ry="45.7" fill="#78b8ea" fill-opacity="0.35" stroke="#262624" stroke-width="0.8"/><path d="M133.2,233.1 A76.8,44.3 0 0 0 286.8,233.1 L286.8,228.3 L133.2,228.3 Z" fill="url(#cn_g2)" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="228.3" rx="76.8" ry="44.3" fill="#828282" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><path d="M182.1,197.9 A27.9,16.1 0 0 0 237.9,197.9 L237.9,129.6 L182.1,129.6 Z" fill="url(#cn_g3)" fill-opacity="0.9" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="129.6" rx="27.9" ry="16.1" fill="#c8ccd0" fill-opacity="0.9" stroke="#262624" stroke-width="0.8"/><path d="M183.2,197.9 A26.8,15.5 0 0 0 236.8,197.9 L236.8,148.5 L183.2,148.5 Z" fill="url(#cn_g4)" fill-opacity="0.85" stroke="#262624" stroke-width="0.8"/><path d="M180.9,129.6 A29.1,16.8 0 0 0 239.1,129.6 L239.1,122.9 L180.9,122.9 Z" fill="url(#cn_g5)" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="122.9" rx="29.1" ry="16.8" fill="#d3b34e" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><path d="M234.7,228.3 A27.9,16.1 0 0 0 290.6,228.3 L290.6,159.9 L234.7,159.9 Z" fill="url(#cn_g3)" fill-opacity="0.9" stroke="#262624" stroke-width="0.8"/><ellipse cx="262.7" cy="159.9" rx="27.9" ry="16.1" fill="#c8ccd0" fill-opacity="0.9" stroke="#262624" stroke-width="0.8"/><path d="M235.9,228.3 A26.8,15.5 0 0 0 289.4,228.3 L289.4,178.9 L235.9,178.9 Z" fill="url(#cn_g4)" fill-opacity="0.85" stroke="#262624" stroke-width="0.8"/><path d="M233.6,159.9 A29.1,16.8 0 0 0 291.7,159.9 L291.7,153.3 L233.6,153.3 Z" fill="url(#cn_g5)" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="262.7" cy="153.3" rx="29.1" ry="16.8" fill="#d3b34e" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><path d="M129.4,228.3 A27.9,16.1 0 0 0 185.3,228.3 L185.3,159.9 L129.4,159.9 Z" fill="url(#cn_g3)" fill-opacity="0.9" stroke="#262624" stroke-width="0.8"/><ellipse cx="157.3" cy="159.9" rx="27.9" ry="16.1" fill="#c8ccd0" fill-opacity="0.9" stroke="#262624" stroke-width="0.8"/><path d="M130.6,228.3 A26.8,15.5 0 0 0 184.1,228.3 L184.1,178.9 L130.6,178.9 Z" fill="url(#cn_g4)" fill-opacity="0.85" stroke="#262624" stroke-width="0.8"/><path d="M128.3,159.9 A29.1,16.8 0 0 0 186.4,159.9 L186.4,153.3 L128.3,153.3 Z" fill="url(#cn_g5)" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="157.3" cy="153.3" rx="29.1" ry="16.8" fill="#d3b34e" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><path d="M182.1,258.8 A27.9,16.1 0 0 0 237.9,258.8 L237.9,190.3 L182.1,190.3 Z" fill="url(#cn_g3)" fill-opacity="0.9" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="190.3" rx="27.9" ry="16.1" fill="#c8ccd0" fill-opacity="0.9" stroke="#262624" stroke-width="0.8"/><path d="M183.2,258.8 A26.8,15.5 0 0 0 236.8,258.8 L236.8,209.3 L183.2,209.3 Z" fill="url(#cn_g4)" fill-opacity="0.85" stroke="#262624" stroke-width="0.8"/><path d="M180.9,190.3 A29.1,16.8 0 0 0 239.1,190.3 L239.1,183.7 L180.9,183.7 Z" fill="url(#cn_g5)" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="183.7" rx="29.1" ry="16.8" fill="#d3b34e" fill-opacity="1" stroke="#262624" stroke-width="0.8"/><ellipse cx="210.0" cy="126.7" rx="79.1" ry="45.7" fill="#5aa9e6" fill-opacity="0.35" stroke="#2f7fd0" stroke-width="0.8"/><ellipse cx="210.0" cy="113.4" rx="83.8" ry="48.4" fill="none" fill-opacity="1" stroke="#262624" stroke-width="1.0"/><line x1="210.0" y1="183.7" x2="390.0" y2="120.0" stroke="#262624" stroke-width="0.9"/><circle cx="210.0" cy="183.7" r="2.4" fill="#262624"/><circle cx="390.0" cy="120.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="390.0" y="124.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">1</text><line x1="127.7" y1="126.7" x2="40.0" y2="70.0" stroke="#262624" stroke-width="0.9"/><circle cx="127.7" cy="126.7" r="2.4" fill="#262624"/><circle cx="40.0" cy="70.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="40.0" y="74.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">2</text><line x1="210.0" y1="274.9" x2="390.0" y2="260.0" stroke="#262624" stroke-width="0.9"/><circle cx="210.0" cy="274.9" r="2.4" fill="#262624"/><circle cx="390.0" cy="260.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="390.0" y="264.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">3</text><line x1="157.3" y1="206.5" x2="40.0" y2="220.0" stroke="#262624" stroke-width="0.9"/><circle cx="157.3" cy="206.5" r="2.4" fill="#262624"/><circle cx="40.0" cy="220.0" r="11" fill="#ffffff" stroke="#262624" stroke-width="1.3"/><text x="40.0" y="224.6" font-size="13" font-weight="700" text-anchor="middle" fill="#262624">4</text></svg><figcaption><b>Water bath for acidic foods only</b><ol><li>Jars with new lids, finger tight</li><li>Water at least 3 cm above the lids</li><li>Rack or folded cloth under the jars</li><li>Fruit, jam or acidified tomatoes inside</li></ol></figcaption></figure>
+<ol>
+<li>Wash jars and new lids in hot soapy water and keep them hot.</li>
+<li>Fill with hot fruit, jam or acidified tomatoes, leaving about 1 cm space at the top. Wipe the rims.</li>
+<li>Close the lids finger tight, stand the jars on a rack or folded cloth in the pot (never directly on the bottom).</li>
+<li>Cover with water at least 3 cm above the lids and boil for the time in your recipe, usually 10 to 20 minutes.</li>
+<li>Lift out and leave 24 hours. Lids should be pulled down and not spring back when pressed.</li>
+</ol>
+<div class="box danger"><strong>Botulism warning</strong>Never preserve vegetables, beans, meat, fish or soups this way. These low acid foods need a pressure canner, or the botulism toxin can grow in the sealed jar without any smell or sign. Tomatoes need 1 tablespoon of lemon juice per 500 ml jar. Throw away any jar with a bulging lid, spurting liquid or bad smell, unopened and without tasting.</div>
+
+</details>
+<details class="fold"><summary><h3>Two week menu from the stored food</h3></summary>
+<p>Uses only the Food tab store list. Cook dinner once a day, using the haybox for rice, lentils and beans to save fuel.</p>
+<div class="tw"><table class="stack">
+<tr><th>Day</th><th>Breakfast</th><th>Lunch</th><th>Dinner</th></tr>
+<tr><td data-label="Day"><span>1</span></td><td data-label="Breakfast"><span>Porridge, honey, raisins</span></td><td data-label="Lunch"><span>Crackers, peanut butter, tinned peaches</span></td><td data-label="Dinner"><span>Pasta with tomato sauce and tuna</span></td></tr>
+<tr><td data-label="Day"><span>2</span></td><td data-label="Breakfast"><span>Porridge, milk powder, dried apricots</span></td><td data-label="Lunch"><span>Flatbread, sardines, tinned carrots</span></td><td data-label="Dinner"><span>Rice and red lentil dal with curry powder</span></td></tr>
+<tr><td data-label="Day"><span>3</span></td><td data-label="Breakfast"><span>Pancakes with jam or honey</span></td><td data-label="Lunch"><span>Leftover dal with flatbread</span></td><td data-label="Dinner"><span>Tinned meat stew with potatoes or rice and peas</span></td></tr>
+<tr><td data-label="Day"><span>4</span></td><td data-label="Breakfast"><span>Porridge, nuts</span></td><td data-label="Lunch"><span>Crackers, tinned fish, fruit</span></td><td data-label="Dinner"><span>Chickpea and tomato stew with rice</span></td></tr>
+<tr><td data-label="Day"><span>5</span></td><td data-label="Breakfast"><span>Porridge, cocoa</span></td><td data-label="Lunch"><span>Bean salad: tinned beans, corn, oil and vinegar</span></td><td data-label="Dinner"><span>Pasta with tinned meat and peas</span></td></tr>
+<tr><td data-label="Day"><span>6</span></td><td data-label="Breakfast"><span>Flatbread with peanut butter</span></td><td data-label="Lunch"><span>Soup from stock cubes, lentils and carrots</span></td><td data-label="Dinner"><span>Rice with mackerel, tomatoes and paprika</span></td></tr>
+<tr><td data-label="Day"><span>7</span></td><td data-label="Breakfast"><span>Porridge, raisins</span></td><td data-label="Lunch"><span>Crackers, chocolate, tinned fruit</span></td><td data-label="Dinner"><span>Bean chilli with rice</span></td></tr>
+<tr><td data-label="Day"><span>8</span></td><td data-label="Breakfast"><span>Pancakes</span></td><td data-label="Lunch"><span>Leftover chilli in flatbread</span></td><td data-label="Dinner"><span>Pasta with chickpeas, garlic and oil</span></td></tr>
+<tr><td data-label="Day"><span>9</span></td><td data-label="Breakfast"><span>Porridge, dried fruit</span></td><td data-label="Lunch"><span>Tinned fish, crackers, carrots</span></td><td data-label="Dinner"><span>Lentil and vegetable soup with fresh bread</span></td></tr>
+<tr><td data-label="Day"><span>10</span></td><td data-label="Breakfast"><span>Porridge, honey</span></td><td data-label="Lunch"><span>Leftover soup</span></td><td data-label="Dinner"><span>Rice, tinned meat, sweetcorn</span></td></tr>
+<tr><td data-label="Day"><span>11</span></td><td data-label="Breakfast"><span>Flatbread, jam</span></td><td data-label="Lunch"><span>Bean and tomato soup</span></td><td data-label="Dinner"><span>Pasta with tuna and peas</span></td></tr>
+<tr><td data-label="Day"><span>12</span></td><td data-label="Breakfast"><span>Porridge, nuts</span></td><td data-label="Lunch"><span>Crackers, peanut butter, fruit</span></td><td data-label="Dinner"><span>Red lentil dal with rice</span></td></tr>
+<tr><td data-label="Day"><span>13</span></td><td data-label="Breakfast"><span>Pancakes</span></td><td data-label="Lunch"><span>Chickpea salad</span></td><td data-label="Dinner"><span>Tinned meat stew with rice</span></td></tr>
+<tr><td data-label="Day"><span>14</span></td><td data-label="Breakfast"><span>Porridge, cocoa</span></td><td data-label="Lunch"><span>Sardines, flatbread</span></td><td data-label="Dinner"><span>Pasta with tomato and bean sauce</span></td></tr>
+</table></div>
+<ul>
+<li>Add a handful of sprouts every day from day 4 (see Food, Sprouting) for fresh vitamins.</li>
+<li>Children: milk powder twice a day, and a daily multivitamin.</li>
+<li>Days 15 to 90: repeat the cycle, swapping in rotated fresh food from the garden or store as you can.</li>
+</ul>
+</details>
+<a class="top" href="#top">Back to top</a>
 </section>
 
 <section id="water">
@@ -1320,11 +1466,12 @@ derivative work: Ak ccm (talk)</a>, CC BY-SA 3.0; <a href="https://commons.wikim
 
 <section id="version">
 <h2>Version and changes</h2>
-<p>You are reading <b>version 2.5</b>, released 31 October 2026. Before an emergency, check everyone in the family has the same version number as the copy in the family chat. If not, replace the old file.</p>
+<p>You are reading <b>version 2.6</b>, released 31 October 2026. Before an emergency, check everyone in the family has the same version number as the copy in the family chat. If not, replace the old file.</p>
 <button type="button" class="pbtn" id="printAll">Print the whole guide</button>
 <details><summary>Change log</summary>
 <div class="tw"><table>
 <tr><th>Version</th><th>Changes</th></tr>
+<tr><td>2.6</td><td>Help in Prague and the region (numbers, hospitals, dentists, pharmacies, vets, poison centre); Preserving food (drying, sauerkraut, water bath jars) and a 2 week menu</td></tr>
 <tr><td>2.5</td><td>New multi tool app icon</td></tr>
 <tr><td>2.4</td><td>Install steps for iPhone and Android at the top, with QR code; QR on the children's card; Phone and offline tools; Children, pets and practice; Car readiness</td></tr>
 <tr><td>2.3</td><td>Installable app: home screen icon, works offline, all buttons work on iPhone too, and a notice when a newer version is out</td></tr>
@@ -1344,7 +1491,7 @@ derivative work: Ak ccm (talk)</a>, CC BY-SA 3.0; <a href="https://commons.wikim
 </table></div>
 </details>
 </section>
-<p class="muted" style="text-align:center">Self Reliance Guide · version 2.5 · 31 October 2026</p>
+<p class="muted" style="text-align:center">Self Reliance Guide · version 2.6 · 31 October 2026</p>
 </main>
 <div id="flashlayer"></div>
 <script>
@@ -1429,7 +1576,7 @@ fl.addEventListener('click',stopAll);
 </script>
 <script>
 (function(){
- var CUR='2.5';
+ var CUR='2.6';
  function newer(a,b){a=String(a).split('.').map(Number);b=String(b).split('.').map(Number);for(var i=0;i<Math.max(a.length,b.length);i++){var x=a[i]||0,y=b[i]||0;if(x!==y)return x>y;}return false;}
  var standalone=(window.matchMedia&&matchMedia('(display-mode: standalone)').matches)||navigator.standalone===true;
  var web=location.protocol==='https:'||location.hostname==='localhost'||location.hostname==='127.0.0.1';
